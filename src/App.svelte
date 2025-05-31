@@ -300,33 +300,65 @@
 </main>
 
 <style>
+  :global(html) {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
   :global(body) {
     margin: 0;
+    padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
     color: #333;
     scroll-behavior: smooth;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  :global(#app) {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
   }
 
   :global(*) {
     box-sizing: border-box;
   }
 
+  main {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  section {
+    width: 100vw;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
   /* Navigation */
   .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    width: 100vw;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #e1e5e9;
     z-index: 1000;
     padding: 1rem 0;
+    margin: 0;
   }
 
   .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100vw;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -362,24 +394,29 @@
 
   /* Container */
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100vw;
+    margin: 0;
     padding: 0 2rem;
   }
 
   /* Hero Section */
   .hero {
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    width: 100vw;
+    display: block;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 6rem 2rem 2rem;
+    margin: 0;
+    position: relative;
+    left: 0;
+    right: 0;
   }
 
   .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
@@ -473,8 +510,11 @@
 
   /* Services Section */
   .services {
-    padding: 6rem 0;
+    width: 100vw;
+    display: block;
+    padding: 6rem 2rem;
     background: #f7fafc;
+    margin: 0;
   }
 
   .services h2 {
@@ -495,6 +535,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .service-card {
@@ -528,7 +571,10 @@
 
   /* About Section */
   .about {
-    padding: 6rem 0;
+    width: 100vw;
+    display: block;
+    padding: 6rem 2rem;
+    margin: 0;
   }
 
   .about-content {
@@ -536,6 +582,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   .about h2 {
@@ -601,8 +650,11 @@
 
   /* Team Section */
   .team {
-    padding: 6rem 0;
+    width: 100vw;
+    display: block;
+    padding: 6rem 2rem;
     background: #f7fafc;
+    margin: 0;
   }
 
   .team h2 {
@@ -617,6 +669,10 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 4rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .team-member {
@@ -663,7 +719,10 @@
 
   /* Contact Section */
   .contact {
-    padding: 6rem 0;
+    width: 100vw;
+    display: block;
+    padding: 6rem 2rem;
+    margin: 0;
   }
 
   .contact h2 {
@@ -678,6 +737,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 4rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contact-item {
@@ -723,9 +786,12 @@
 
   /* Footer */
   .footer {
+    width: 100vw;
+    display: block;
     background: #2d3748;
     color: white;
-    padding: 3rem 0 1rem;
+    padding: 3rem 2rem;
+    margin: 0;
   }
 
   .footer-content {
@@ -733,6 +799,10 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .footer-section h3,
@@ -780,6 +850,8 @@
     padding-top: 1rem;
     text-align: center;
     color: #cbd5e0;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 
   /* Responsive Design */
@@ -790,6 +862,10 @@
 
     .nav-menu {
       gap: 1rem;
+    }
+
+    .hero {
+      padding: 6rem 1rem 2rem;
     }
 
     .hero-content {
@@ -808,7 +884,15 @@
       gap: 2rem;
     }
 
-    .services-grid {
+    .services,
+    .about,
+    .team,
+    .contact {
+      padding: 4rem 1rem;
+    }
+
+    .services-grid,
+    .team-grid {
       grid-template-columns: 1fr;
     }
 
@@ -818,6 +902,10 @@
 
     .container {
       padding: 0 1rem;
+    }
+
+    .footer {
+      padding: 3rem 1rem;
     }
   }
 </style>
