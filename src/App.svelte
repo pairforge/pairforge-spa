@@ -374,8 +374,8 @@
 
 	section {
 		padding: 8rem 2rem;
-		opacity: 0;
-		transform: translateY(30px);
+		opacity: 1;
+		transform: translateY(0);
 		transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 	}
 
@@ -481,6 +481,8 @@
 		position: relative;
 		padding: 8rem 2rem 6rem;
 		background: linear-gradient(135deg, var(--background-light) 0%, var(--background-white) 100%);
+		opacity: 1 !important;
+		transform: translateY(0) !important;
 	}
 
 	.hero-overlay {
@@ -572,6 +574,11 @@
 		padding: 8rem 2rem;
 	}
 
+	.services.visible {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
 	.services h2 {
 		text-align: center;
 		font-size: clamp(2.5rem, 4vw, 3.5rem);
@@ -641,6 +648,10 @@
 	}
 
 	/* About Section */
+	.about {
+		background: var(--background-white);
+	}
+
 	.about-content {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -771,6 +782,10 @@
 	}
 
 	/* Contact Section */
+	.contact {
+		background: var(--background-white);
+	}
+
 	.contact h2 {
 		text-align: center;
 		font-size: 2.5rem;
