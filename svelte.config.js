@@ -18,10 +18,10 @@ const config = {
       fallback: undefined, // or '404.html' or 'index.html'
       precompress: false,
       strict: true
-    }),
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/pairforge-spa' : '',
-    }
+    })
+    // paths: {
+    //   base: process.env.NODE_ENV === 'production' ? '/pairforge-spa' : '',
+    // }
   }
 };
 
