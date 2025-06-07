@@ -70,7 +70,6 @@
 				<li><a href="#home" on:click|preventDefault={() => scrollToSection('home')} class:active={currentSection === 'home'}>Home</a></li>
 				<li><a href="#services" on:click|preventDefault={() => scrollToSection('services')} class:active={currentSection === 'services'}>Services</a></li>
 				<li><a href="#about" on:click|preventDefault={() => scrollToSection('about')} class:active={currentSection === 'about'}>About</a></li>
-				<li><a href="#team" on:click|preventDefault={() => scrollToSection('team')} class:active={currentSection === 'team'}>Team</a></li>
 				<li><a href="#contact" on:click|preventDefault={() => scrollToSection('contact')} class:active={currentSection === 'contact'}>Contact</a></li>
 			</ul>
 		</div>
@@ -168,18 +167,17 @@
 					<div class="tech-stack">
 						<h3>Our Tech Stack</h3>
 						<div class="tech-badges">
-							<span class="tech-badge">JavaScript</span>
-							<span class="tech-badge">TypeScript</span>
-							<span class="tech-badge">React</span>
-							<span class="tech-badge">Svelte</span>
-							<span class="tech-badge">Node.js</span>
+							<span class="tech-badge">Ruby</span>
 							<span class="tech-badge">Python</span>
-							<span class="tech-badge">Go</span>
-							<span class="tech-badge">AWS</span>
+							<span class="tech-badge">GCP</span>
+							<span class="tech-badge">Kafka</span>
 							<span class="tech-badge">Docker</span>
 							<span class="tech-badge">PostgreSQL</span>
 							<span class="tech-badge">MongoDB</span>
 							<span class="tech-badge">Redis</span>
+							<span class="tech-badge">JavaScript</span>
+							<span class="tech-badge">React</span>
+							<span class="tech-badge">Node.js</span>
 						</div>
 					</div>
 				</div>
@@ -315,7 +313,7 @@
 	}
 
 	section {
-		padding: 8rem 2rem;
+		padding: 5rem 2rem;
 		opacity: 1;
 		transform: translateY(0);
 		transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -421,7 +419,7 @@
 		text-align: center;
 		color: white;
 		position: relative;
-		padding: 8rem 2rem 6rem;
+		padding: 6rem 2rem 4rem;
 		background: var(--background-light);
 		opacity: 1 !important;
 		transform: translateY(0) !important;
@@ -513,7 +511,7 @@
 	/* Services Section */
 	.services {
 		background: var(--background-light);
-		padding: 8rem 2rem;
+		padding: 5rem 2rem;
 	}
 
 	.services.visible {
@@ -764,29 +762,47 @@
 	}
 
 	.form-group {
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
 	}
 
 	.form-group input,
 	.form-group textarea {
 		width: 100%;
-		padding: 0.85rem 1rem;
-		border: 1px solid var(--border-color);
-		border-radius: 8px;
+		padding: 1rem 1.25rem;
+		border: 2px solid var(--border-color);
+		border-radius: 12px;
 		font-size: 1rem;
 		font-family: inherit;
-		transition: border-color 0.3s, box-shadow 0.3s;
+		background: var(--background-white);
+		color: var(--text-dark);
+		transition: all 0.2s ease;
+		resize: vertical;
+	}
+
+	.form-group input::placeholder,
+	.form-group textarea::placeholder {
+		color: var(--text-light);
+		opacity: 0.8;
 	}
 
 	.form-group input:focus,
 	.form-group textarea:focus {
 		outline: none;
 		border-color: var(--primary-color);
-		box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+		box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+		background: var(--background-white);
+	}
+
+	.form-group textarea {
+		min-height: 120px;
 	}
 
 	.contact-form .btn-primary {
 		width: 100%;
+		padding: 1.25rem 2rem;
+		font-size: 1.1rem;
+		font-weight: 700;
+		margin-top: 1rem;
 	}
 
 	/* Footer */
