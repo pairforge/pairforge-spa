@@ -111,16 +111,6 @@
 				</div>
 				<div class="service-card">
 					<div class="service-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
-					</div>
-					<h3>Mobile Development</h3>
-					<p>
-						Native and cross-platform mobile applications for iOS and Android using React Native,
-						Flutter, and Swift/Kotlin.
-					</p>
-				</div>
-				<div class="service-card">
-					<div class="service-icon">
 						<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
 					</div>
 					<h3>Cloud & DevOps</h3>
@@ -197,53 +187,6 @@
 		</div>
 	</section>
 
-	<section id="team" class="team">
-		<div class="container">
-			<h2>Our Team</h2>
-			<p class="section-subtitle">Meet the engineers behind PairForge</p>
-			<div class="team-grid">
-				<div class="team-member">
-					<div class="member-avatar">
-						<img src="http://googleusercontent.com/image_generation_content/1" alt="Alex Chen, Founding Partner & CTO" />
-					</div>
-					<h3>Alex Chen</h3>
-					<p class="role">Founding Partner & CTO</p>
-					<p>Full-stack engineer with 8+ years experience in scalable web applications and cloud architecture.</p>
-					<div class="member-links">
-						<a href="#" class="link">LinkedIn</a>
-						<a href="#" class="link">GitHub</a>
-					</div>
-				</div>
-				<div class="team-member">
-					<div class="member-avatar">
-						<img src="http://googleusercontent.com/image_generation_content/2" alt="Sarah Rodriguez, Founding Partner & Lead Engineer" />
-					</div>
-					<h3>Sarah Rodriguez</h3>
-					<p class="role">Founding Partner & Lead Engineer</p>
-					<p>
-						Expert in modern frontend frameworks and mobile development with a passion for user experience.
-					</p>
-					<div class="member-links">
-						<a href="#" class="link">LinkedIn</a>
-						<a href="#" class="link">GitHub</a>
-					</div>
-				</div>
-				<div class="team-member">
-					<div class="member-avatar">
-						<img src="http://googleusercontent.com/image_generation_content/3" alt="Michael Johnson, Senior DevOps Engineer" />
-					</div>
-					<h3>Michael Johnson</h3>
-					<p class="role">Senior DevOps Engineer</p>
-					<p>Cloud infrastructure specialist with expertise in Kubernetes, CI/CD, and site reliability engineering.</p>
-					<div class="member-links">
-						<a href="#" class="link">LinkedIn</a>
-						<a href="#" class="link">GitHub</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<section id="contact" class="contact">
 		<div class="container">
 			<h2>Let's Build Something Amazing Together</h2>
@@ -310,7 +253,6 @@
 					<h4>Company</h4>
 					<ul>
 						<li><a href="#about" on:click|preventDefault={() => scrollToSection('about')}>About Us</a></li>
-						<li><a href="#team" on:click|preventDefault={() => scrollToSection('team')}>Our Team</a></li>
 						<li><a href="#contact" on:click|preventDefault={() => scrollToSection('contact')}>Contact</a></li>
 					</ul>
 				</div>
