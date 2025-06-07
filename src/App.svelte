@@ -64,7 +64,7 @@
 	<nav class="navbar">
 		<div class="nav-container">
 			<div class="nav-logo">
-				<h2>PairForge LLC</h2>
+				<h2>PairForge</h2>
 			</div>
 			<ul class="nav-menu">
 				<li><a href="#home" on:click|preventDefault={() => scrollToSection('home')} class:active={currentSection === 'home'}>Home</a></li>
@@ -79,7 +79,7 @@
 		<div class="hero-overlay"></div>
 		<div class="hero-content">
 			<div transition:fly={{ y: 20, duration: 800 }}>
-				<h1>PairForge LLC</h1>
+				<h1>PairForge</h1>
 				<h2>Elite Software Engineering Solutions</h2>
 				<p>
 					We craft exceptional software solutions through collaborative engineering, modern
@@ -104,8 +104,7 @@
 					</div>
 					<h3>Full-Stack Development</h3>
 					<p>
-						Modern web applications using cutting-edge technologies like React, Vue, Svelte,
-						Node.js, and cloud platforms.
+						Modern web applications using Ruby on Rails, NodeJS and Django.
 					</p>
 				</div>
 				<div class="service-card">
@@ -114,8 +113,7 @@
 					</div>
 					<h3>Cloud & DevOps</h3>
 					<p>
-						Scalable cloud infrastructure, CI/CD pipelines, and DevOps solutions on AWS, Azure, and
-						Google Cloud.
+						Scalable cloud infrastructure, CI/CD pipelines, and DevOps solutions on Google Cloud and AWS.
 					</p>
 				</div>
 				<div class="service-card">
@@ -138,30 +136,11 @@
 				<div class="about-text">
 					<h2>About PairForge LLC</h2>
 					<p>
-						Founded on the principles of collaborative engineering and technical excellence,
-						PairForge LLC is a premier software development consultancy that specializes in
-						building innovative, scalable, and maintainable software solutions.
-					</p>
-					<p>
 						Our name reflects our core philosophy: just as a blacksmith pairs skill with fire to
 						forge metal, we pair deep technical expertise with creative problem-solving to forge
 						exceptional software.
 					</p>
 
-					<div class="stats">
-						<div class="stat">
-							<h3>50+</h3>
-							<p>Projects Delivered</p>
-						</div>
-						<div class="stat">
-							<h3>98%</h3>
-							<p>Client Satisfaction</p>
-						</div>
-						<div class="stat">
-							<h3>5+</h3>
-							<p>Years Experience</p>
-						</div>
-					</div>
 				</div>
 				<div class="about-visual">
 					<div class="tech-stack">
@@ -170,14 +149,14 @@
 							<span class="tech-badge">Ruby</span>
 							<span class="tech-badge">Python</span>
 							<span class="tech-badge">GCP</span>
+							<span class="tech-badge">JavaScript</span>
+							<span class="tech-badge">React</span>
+							<span class="tech-badge">Node.js</span>
 							<span class="tech-badge">Kafka</span>
 							<span class="tech-badge">Docker</span>
 							<span class="tech-badge">PostgreSQL</span>
 							<span class="tech-badge">MongoDB</span>
 							<span class="tech-badge">Redis</span>
-							<span class="tech-badge">JavaScript</span>
-							<span class="tech-badge">React</span>
-							<span class="tech-badge">Node.js</span>
 						</div>
 					</div>
 				</div>
@@ -187,49 +166,14 @@
 
 	<section id="contact" class="contact">
 		<div class="container">
-			<h2>Let's Build Something Amazing Together</h2>
+			<h2>Let's build something amazing together</h2>
 			<p class="section-subtitle">Ready to start your next project? We'd love to hear from you.</p>
 
 			<div class="contact-content">
-				<div class="contact-info">
-					<div class="contact-item">
-						<div class="contact-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-						</div>
-						<div>
-							<h3>Email</h3>
-							<p>hello@pairforge.com</p>
-						</div>
-					</div>
-					<div class="contact-item">
-						<div class="contact-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-						</div>
-						<div>
-							<h3>Phone</h3>
-							<p>+1 (555) 123-4567</p>
-						</div>
-					</div>
-					<div class="contact-item">
-						<div class="contact-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-						</div>
-						<div>
-							<h3>Location</h3>
-							<p>San Francisco, CA</p>
-						</div>
-					</div>
-				</div>
 
 				<form class="contact-form" on:submit={handleContactSubmit}>
 					<div class="form-group">
-						<input type="text" placeholder="Your Name" required />
-					</div>
-					<div class="form-group">
 						<input type="email" placeholder="Your Email" required />
-					</div>
-					<div class="form-group">
-						<input type="text" placeholder="Company (Optional)" />
 					</div>
 					<div class="form-group">
 						<textarea placeholder="Tell us about your project..." rows="5" required></textarea>
@@ -242,27 +186,6 @@
 
 	<footer class="footer">
 		<div class="container">
-			<div class="footer-content">
-				<div class="footer-section">
-					<h3>PairForge LLC</h3>
-					<p>Forging the future of software, one line of code at a time.</p>
-				</div>
-				<div class="footer-section">
-					<h4>Company</h4>
-					<ul>
-						<li><a href="#about" on:click|preventDefault={() => scrollToSection('about')}>About Us</a></li>
-						<li><a href="#contact" on:click|preventDefault={() => scrollToSection('contact')}>Contact</a></li>
-					</ul>
-				</div>
-				<div class="footer-section">
-					<h4>Connect</h4>
-					<div class="social-links">
-						<a href="#" class="social-link">LinkedIn</a>
-						<a href="#" class="social-link">GitHub</a>
-						<a href="#" class="social-link">Twitter</a>
-					</div>
-				</div>
-			</div>
 			<div class="footer-bottom">
 				<p>&copy; 2025 PairForge LLC. All rights reserved.</p>
 			</div>
@@ -349,7 +272,6 @@
 		right: 0;
 		background: rgba(15, 23, 42, 0.95);
 		backdrop-filter: blur(20px);
-		border-bottom: 1px solid rgba(51, 65, 85, 0.3);
 		z-index: 1000;
 		padding: 1.5rem 0;
 	}
@@ -643,6 +565,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.75rem;
+		justify-content: center;
 	}
 
 	.tech-badge {
@@ -733,33 +656,18 @@
 	}
 
 	.contact-content {
-		display: grid;
-		grid-template-columns: 1fr 1.5fr;
-		gap: 4rem;
-		align-items: flex-start;
-	}
-
-	.contact-item {
 		display: flex;
-		align-items: flex-start;
-		gap: 1.5rem;
-		margin-bottom: 2rem;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.contact-icon {
-		color: var(--primary-color);
-		flex-shrink: 0;
-		margin-top: 4px;
+	.contact-form {
+		width: 100%;
+		max-width: 600px;
+		margin: 0 auto;
 	}
 
-	.contact-info p {
-		margin: 0;
-		color: var(--text-light);
-	}
 
-	.contact-info h3 {
-		margin: 0 0 0.5rem 0;
-	}
 
 	.form-group {
 		margin-bottom: 2rem;
@@ -810,7 +718,6 @@
 		background: var(--background-light);
 		color: var(--text-light);
 		padding: 4rem 2rem 2rem;
-		border-top: 1px solid var(--border-color);
 	}
 
 	.footer-content {
@@ -855,7 +762,6 @@
 	}
 
 	.footer-bottom {
-		border-top: 1px solid var(--border-color);
 		padding-top: 2rem;
 		text-align: center;
 		color: var(--text-light);
@@ -863,8 +769,7 @@
 
 	/* Responsive Design */
 	@media (max-width: 992px) {
-		.about-content,
-		.contact-content {
+		.about-content {
 			grid-template-columns: 1fr;
 			gap: 3rem;
 		}
