@@ -350,7 +350,7 @@
 		font-family: var(--body-font);
 		line-height: 1.6;
 		color: var(--text-dark);
-		background-color: var(--background-white);
+		background-color: var(--background-light);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -480,7 +480,7 @@
 		color: white;
 		position: relative;
 		padding: 8rem 2rem 6rem;
-		background: linear-gradient(135deg, var(--background-light) 0%, var(--background-white) 100%);
+		background: var(--background-light);
 		opacity: 1 !important;
 		transform: translateY(0) !important;
 	}
@@ -649,7 +649,7 @@
 
 	/* About Section */
 	.about {
-		background: var(--background-white);
+		background: var(--background-light);
 	}
 
 	.about-content {
@@ -783,7 +783,7 @@
 
 	/* Contact Section */
 	.contact {
-		background: var(--background-white);
+		background: var(--background-light);
 	}
 
 	.contact h2 {
@@ -848,7 +848,7 @@
 
 	/* Footer */
 	.footer {
-		background: var(--background-white);
+		background: var(--background-light);
 		color: var(--text-light);
 		padding: 4rem 2rem 2rem;
 		border-top: 1px solid var(--border-color);
