@@ -541,7 +541,7 @@
 		padding: 3rem 2.5rem;
 		border-radius: 20px;
 		box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
-		transition: all 0.3s ease;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
 		border: 1px solid var(--border-color);
 		text-align: center;
 		position: relative;
@@ -557,12 +557,13 @@
 		height: 4px;
 		background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
 		transform: scaleX(0);
-		transition: transform 0.3s ease;
+		transition: transform 0.25s ease;
+		transform-origin: left;
 	}
 
 	.service-card:hover {
-		transform: translateY(-8px);
-		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+		transform: translateY(-6px);
+		box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
 	}
 
 	.service-card:hover::before {
