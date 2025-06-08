@@ -65,6 +65,7 @@
 	<nav class="navbar">
 		<div class="nav-container">
 			<div class="nav-logo">
+				<img src="/favicon-from-svg-64.png" alt="PairForge Logo" class="nav-logo-icon" />
 				<h2>PairForge</h2>
 			</div>
 			<ul class="nav-menu">
