@@ -135,7 +135,7 @@
 		<div class="container">
 			<div class="about-content">
 				<div class="about-text">
-					<h2>About PairForge LLC</h2>
+					<h2>About Us</h2>
 					<p>
 						Our name reflects our core philosophy: just as a blacksmith pairs skill with fire to
 						forge metal, we pair deep technical expertise with creative problem-solving to forge
